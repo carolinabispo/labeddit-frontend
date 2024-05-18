@@ -1,13 +1,121 @@
-body {
+@charset "UTF-8";
+* {
+  font-family: "IBM Ples Sans", sans-serif;
+  font-size: 16px;
+  box-sizing: border-box;
+  padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* body {
+  max-width: 768px;
+  height: 100vh;
+  height: 100%;
+  background-color: aqua;
+} */
+
+input,
+textarea::placeholder {
+  font-family: "IBM Ples Sans", sans-serif;
+  outline: none;
+}
+
+ form {
+  /* width: 500px; */
+  height: 20vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+ 
+}
+
+.input-group{
+  position: relative;
+ margin-bottom: 20px; 
+ 
+}
+
+input {
+  width: 350px;
+  height: 60px;
+  padding: 10px;
+  opacity: 0px;
+  border-radius: 5px;
+  border: 1px solid #d5d8de;
+  font-size: 18px;
+  
+  display: block;
+  
+  border: 1px solid #d5d8de;
+} 
+
+input:focus {
+  outline: none;
+}
+
+label {
+  color: #999;
+  font-size: 18px;
+  font-weight: normal;
+  position: absolute;
+  pointer-events: none;
+  left: 5px;
+  top: 10px;
+  transition: 0.2s ease all;
+  -moz-transition: 0.2s ease all;
+  -webkit-transition: 0.2s ease all;
+}
+
+input:focus ~ label,
+input:valid ~ label {
+  top: -20px;
+  font-size: 14px;
+  color: #5b6167;
+}
+
+input:focus ~ .bar:before,
+input:focus ~ .bar:after {
+  width: 50%;
+}
+
+.highlight {
+  position: absolute;
+  height: 60%;
+  width: 100px;
+  top: 25%;
+  left: 0;
+  pointer-events: none;
+  opacity: 0.5;
+}
+
+input:focus ~ .highlight {
+  -webkit-animation: inputHighlighter 0.3s ease;
+  -moz-animation: inputHighlighter 0.3s ease;
+  animation: inputHighlighter 0.3s ease;
+}
+
+/* animations */
+@-webkit-keyframes inputHighlighter {
+  from { background: #4285f4; }
+  to   { width: 0; background: transparent; }
+}
+@-moz-keyframes inputHighlighter {
+  from { background: #4285f4; }
+  to   { width: 0; background: transparent; }
+}
+@keyframes inputHighlighter {
+  from { background: #4285f4; }
+  to   { width: 0; background: transparent; }
+}
+
+@media  screen and (max-width: 768px) {
+  body {
+    font-family: "IBM Ples Sans", sans-serif;
+    font-size: 16px;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    overflow-x: hidden;
+  }
 }
