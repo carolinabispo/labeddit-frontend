@@ -11,14 +11,12 @@ const Login = () => {
 
 
 
-
-
   return (
     <div className="main">
       <div className="statusBar">
         <img src={statusbar} alt="barra status do celular" />
       </div>
-      <div className="logo">
+      <div className="logoLogin">
         <img src={LOGO} alt="logo do labeddit" />
         <p>O projeto de rede social da Labenu</p>
       </div>
@@ -26,11 +24,11 @@ const Login = () => {
         <form>
           <div className="input-group">
             <input type="text" name="email" required />
-            <label>Username</label>
+            <label>Email</label>
           </div>
           <div class="input-group">
             <input type="password" required />
-            <label>Password</label>
+            <label>Senha</label>
           </div>
         </form>
       </div>
