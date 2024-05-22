@@ -1,0 +1,166 @@
+.title {
+  width: 364px;
+  height: 86px;
+  margin-top: 20px;
+}
+
+.title p {
+  font-family: IBM Plex Sans;
+  font-size: 33px;
+  font-weight: 700;
+  line-height: 42.9px;
+  text-align: left;
+  padding-left: 20px;
+}
+
+input,
+textarea::placeholder {
+  font-family: "IBM Ples Sans", sans-serif;
+  outline: none;
+}
+
+.container-form {
+  /* background-color: #4285f4; */
+  height: 220px;
+  margin-top: 2em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form-register {
+  height: 20vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.input-container {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+input {
+  margin-bottom: 10px;
+  width: 350px;
+  height: 60px;
+  padding: 10px;
+  opacity: 0px;
+  border-radius: 5px;
+  border: 1px solid #d5d8de;
+  font-size: 18px;
+  display: block;
+  border: 1px solid #d5d8de;
+}
+
+input:focus {
+  outline: none;
+}
+
+label {
+  color: #999;
+  font-size: 18px;
+  font-weight: normal;
+  position: absolute;
+  pointer-events: none;
+  left: 5px;
+  top: 10px;
+  transition: 0.2s ease all;
+  -moz-transition: 0.2s ease all;
+  -webkit-transition: 0.2s ease all;
+}
+
+input:focus ~ label,
+input:valid ~ label {
+  top: -20px;
+  font-size: 14px;
+  color: #5b6167;
+}
+
+input:focus ~ .bar:before,
+input:focus ~ .bar:after {
+  width: 50%;
+}
+
+.highlight {
+  position: absolute;
+  height: 60%;
+  width: 100px;
+  top: 25%;
+  left: 0;
+  pointer-events: none;
+  opacity: 0.5;
+}
+
+input:focus ~ .highlight {
+  -webkit-animation: inputHighlighter 0.3s ease;
+  -moz-animation: inputHighlighter 0.3s ease;
+  animation: inputHighlighter 0.3s ease;
+}
+
+@-webkit-keyframes inputHighlighter {
+  from {
+    background: #4285f4;
+  }
+  to {
+    width: 0;
+    background: transparent;
+  }
+}
+@-moz-keyframes inputHighlighter {
+  from {
+    background: #4285f4;
+  }
+  to {
+    width: 0;
+    background: transparent;
+  }
+}
+@keyframes inputHighlighter {
+  from {
+    background: #4285f4;
+  }
+  to {
+    width: 0;
+    background: transparent;
+  }
+}
+
+.terms{
+    margin-top: 2em;
+    display: flex;
+    flex-direction: column;
+    gap: 17px;
+    padding-left: 20px;
+}
+
+.terms p {
+    font-size: 14px;
+    color: black;
+}
+
+.terms span{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 11px;
+}
+#checkbox{
+    width: 18px;
+    height: 18px;
+}
+
+.bnt-register{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2em;
+    
+}
+
+.bnt-register button{
+  width: 365px;
+    background: linear-gradient(90deg, #FF6489 0%, #F9B24E 100%);
+
+}
+

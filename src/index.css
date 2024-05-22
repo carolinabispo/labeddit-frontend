@@ -1,114 +1,8 @@
-@charset "UTF-8";
-* {
-  font-family: "IBM Ples Sans", sans-serif;
-  font-size: 16px;
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-/* body {
-  max-width: 768px;
-  height: 100vh;
-  height: 100%;
-  background-color: aqua;
-} */
-
-input,
-textarea::placeholder {
-  font-family: "IBM Ples Sans", sans-serif;
-  outline: none;
-}
-
- form {
-  /* width: 500px; */
-  height: 20vh;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
- 
-}
-
-.input-group{
-  position: relative;
- margin-bottom: 20px; 
- 
-}
-
-input {
-  width: 350px;
-  height: 60px;
-  padding: 10px;
-  opacity: 0px;
-  border-radius: 5px;
-  border: 1px solid #d5d8de;
-  font-size: 18px;
-  
-  display: block;
-  
-  border: 1px solid #d5d8de;
-} 
-
-input:focus {
-  outline: none;
-}
-
-label {
-  color: #999;
-  font-size: 18px;
-  font-weight: normal;
-  position: absolute;
-  pointer-events: none;
-  left: 5px;
-  top: 10px;
-  transition: 0.2s ease all;
-  -moz-transition: 0.2s ease all;
-  -webkit-transition: 0.2s ease all;
-}
-
-input:focus ~ label,
-input:valid ~ label {
-  top: -20px;
-  font-size: 14px;
-  color: #5b6167;
-}
-
-input:focus ~ .bar:before,
-input:focus ~ .bar:after {
-  width: 50%;
-}
-
-.highlight {
-  position: absolute;
-  height: 60%;
-  width: 100px;
-  top: 25%;
-  left: 0;
-  pointer-events: none;
-  opacity: 0.5;
-}
-
-input:focus ~ .highlight {
-  -webkit-animation: inputHighlighter 0.3s ease;
-  -moz-animation: inputHighlighter 0.3s ease;
-  animation: inputHighlighter 0.3s ease;
-}
-
-/* animations */
-@-webkit-keyframes inputHighlighter {
-  from { background: #4285f4; }
-  to   { width: 0; background: transparent; }
-}
-@-moz-keyframes inputHighlighter {
-  from { background: #4285f4; }
-  to   { width: 0; background: transparent; }
-}
-@keyframes inputHighlighter {
-  from { background: #4285f4; }
-  to   { width: 0; background: transparent; }
-}
-
-@media  screen and (max-width: 768px) {
+@media screen and (max-width: 768px) {
   body {
     font-family: "IBM Ples Sans", sans-serif;
     font-size: 16px;
@@ -116,6 +10,36 @@ input:focus ~ .highlight {
     padding: 0;
     margin: 0;
     height: 100vh;
-    overflow-x: hidden;
+  }
+}
+
+@media (max-width: 576px) {
+  .logo p {
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  .formContainer {
+    margin-top: 3em;
+  }
+
+  .bnt {
+    height: 150px;
+  }
+
+  button {
+    width: 95%;
+    max-width: 320px;
+    height: 45px;
+  }
+
+  #line {
+    width: 95%;
+  }
+
+  #login button,
+  #register button {
+    font-size: 14px;
+    height: 45px;
   }
 }
