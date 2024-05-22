@@ -1,5 +1,7 @@
 .title {
-  width: 364px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
   height: 86px;
   margin-top: 20px;
 }
@@ -130,6 +132,8 @@ input:focus ~ .highlight {
     margin-top: 2em;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     gap: 17px;
     padding-left: 20px;
 }

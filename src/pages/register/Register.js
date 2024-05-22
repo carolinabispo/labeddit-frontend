@@ -1,5 +1,6 @@
 import "../register/Register.css";
-import HeaderSingUp from "../../components/HeaderSingUp";
+import HeaderSingUp from "../../components/HeaderSingUp/HeaderSingUp";
+import { Link } from "react-router-dom";
 const Register = () => {
   return (
     <div>
@@ -32,7 +33,10 @@ const Register = () => {
               </span>
             </div>
             <div className="bnt-register">
-              <button>Cadastrar</button>
+             <Link to={"/home"}>
+             <button>Cadastrar</button>
+
+             </Link>
             </div>
     </div>
   );

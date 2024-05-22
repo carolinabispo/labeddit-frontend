@@ -1,0 +1,30 @@
+.logo{
+    width: 100%;
+    background: #ededed;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.entrarRegister {
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-weight: bold;
+    color: #4088CB;
+}
+
+.return{
+    /* background-color: aqua; */
+    margin-right: 6em;
+    
+}
+
+/* #return-bnt{
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    color: #4088CB;
+} */

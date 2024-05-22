@@ -34,7 +34,10 @@ const Login = () => {
       </div>
       <div className="bnt">
         <div id="login">
-        <button >Continuar</button>
+          <Link to={"/home"}>
+          <button >Continuar</button>
+
+          </Link>
         </div>
         <div id="line">
         <span></span>
