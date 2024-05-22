@@ -1,0 +1,44 @@
+.container-post {
+  height: 200px;
+  margin-top: 2em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-post {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form-post textarea {
+  width: 364px;
+  height: 131px;
+  border-radius: 12px;
+  background: #ededed;
+  padding: 20px;
+  font-family: IBM Plex Sans;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 23.4px;
+  text-align: left;
+  resize: none;
+  outline: none;
+  border: none;
+}
+
+.form-post button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  font-family: IBM Plex Sans;
+  color: #ededed;
+  font-weight: bold;
+  width: Fixed (359px) px;
+  padding: 12px 145px 12px 145px;
+  border-radius: 12px;
+  background: linear-gradient(90deg, #ff6489 0%, #f9b24e 100%);
+}
